@@ -1,0 +1,10 @@
+{
+  "title": "coujure_readme",
+  "subheading": "LLM으로 readme 자동 생성",
+  "content": [
+    "github 리포지토리를 입력하면 이를 토대로 readme 파일 생성",
+    "LLama 3.1 사용, 개인 PC에서 연결하였음"
+  ],
+  "link": "https://596428.github.io/",
+  "techStack": ["Python", "HTML", "JavaDcript", "CSS", "AWS"]
+}
