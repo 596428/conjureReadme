@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="input-container">
+        <input type="text" id="repo-url" placeholder="Enter GitHub repository URL">
+        <div id="options">
+            <div>
+                <label><input type="radio" name="language" value="ko" checked> 한글</label>
+                <label><input type="radio" name="language" value="en"> ENG</label>
+            </div>
+            <div>
+                <label><input type="radio" name="readme-type" value="existing" checked> Show existing README</label>
+                <label><input type="radio" name="readme-type" value="new"> Generate new README</label>
+            </div>
+        </div>
+        <button id="submit-btn">Generate README</button>
+    </div>
+    
+    <div id="result-container" style="display: none;">
+        <div class="tab-header">
+            <button class="tab-button active" data-tab="preview">Preview</button>
+            <button class="tab-button" data-tab="code">Code</button>
+        </div>
+        <div class="content-container">
+            <button id="copy-btn">Copy raw content</button>
+            <div id="preview-content" class="active-content"></div>
+            <div id="code-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
